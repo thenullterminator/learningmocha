@@ -1,0 +1,1 @@
+module.exports.sqr=(a)=> a*a;
