@@ -1,11 +1,7 @@
 const utils=require("./utils");
-
+const expect= require("expect");
 it("should return square",()=>{
+
 var res=utils.sqr(5);
-
-if(res!==25)
-{
-    throw new Error(`${res} is wrong it should be 25`);
-}
-
+expect(res).toBe(25).toBeA('number');
 });
