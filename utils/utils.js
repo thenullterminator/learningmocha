@@ -1,1 +1,7 @@
-module.exports.sqr=(a)=> a*a;
+module.exports.sqr=(a,callback)=>{
+    setTimeout(()=>{
+        
+        callback(a*a);
+    },2000);
+
+};
